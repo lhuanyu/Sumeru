@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4F4F1452C314449002AF75C /* SumeruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1442C314449002AF75C /* SumeruApp.swift */; };
+		E4F4F1472C314449002AF75C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1462C314449002AF75C /* ContentView.swift */; };
+		E4F4F1492C314449002AF75C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1482C314449002AF75C /* Item.swift */; };
+		E4F4F14B2C31444A002AF75C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4F4F14A2C31444A002AF75C /* Assets.xcassets */; };
+		E4F4F14F2C31444A002AF75C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4F4F14E2C31444A002AF75C /* Preview Assets.xcassets */; };
+		E4F4F1592C31444A002AF75C /* SumeruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1582C31444A002AF75C /* SumeruTests.swift */; };
+		E4F4F1632C31444A002AF75C /* SumeruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1622C31444A002AF75C /* SumeruUITests.swift */; };
+		E4F4F1652C31444A002AF75C /* SumeruUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1642C31444A002AF75C /* SumeruUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4F4F1552C31444A002AF75C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4F4F1392C314449002AF75C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4F4F1402C314449002AF75C;
+			remoteInfo = Sumeru;
+		};
+		E4F4F15F2C31444A002AF75C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4F4F1392C314449002AF75C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4F4F1402C314449002AF75C;
+			remoteInfo = Sumeru;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4F4F1412C314449002AF75C /* Sumeru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sumeru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F4F1442C314449002AF75C /* SumeruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumeruApp.swift; sourceTree = "<group>"; };
+		E4F4F1462C314449002AF75C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E4F4F1482C314449002AF75C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E4F4F14A2C31444A002AF75C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4F4F14C2C31444A002AF75C /* Sumeru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sumeru.entitlements; sourceTree = "<group>"; };
+		E4F4F14E2C31444A002AF75C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4F4F1542C31444A002AF75C /* SumeruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SumeruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F4F1582C31444A002AF75C /* SumeruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumeruTests.swift; sourceTree = "<group>"; };
+		E4F4F15E2C31444A002AF75C /* SumeruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SumeruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F4F1622C31444A002AF75C /* SumeruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumeruUITests.swift; sourceTree = "<group>"; };
+		E4F4F1642C31444A002AF75C /* SumeruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumeruUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4F4F13E2C314449002AF75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F4F1512C31444A002AF75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F4F15B2C31444A002AF75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4F4F1382C314449002AF75C = {
+			isa = PBXGroup;
+			children = (
+				E4F4F1432C314449002AF75C /* Sumeru */,
+				E4F4F1572C31444A002AF75C /* SumeruTests */,
+				E4F4F1612C31444A002AF75C /* SumeruUITests */,
+				E4F4F1422C314449002AF75C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4F4F1422C314449002AF75C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4F4F1412C314449002AF75C /* Sumeru.app */,
+				E4F4F1542C31444A002AF75C /* SumeruTests.xctest */,
+				E4F4F15E2C31444A002AF75C /* SumeruUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4F4F1432C314449002AF75C /* Sumeru */ = {
+			isa = PBXGroup;
+			children = (
+				E4F4F1442C314449002AF75C /* SumeruApp.swift */,
+				E4F4F1462C314449002AF75C /* ContentView.swift */,
+				E4F4F1482C314449002AF75C /* Item.swift */,
+				E4F4F14A2C31444A002AF75C /* Assets.xcassets */,
+				E4F4F14C2C31444A002AF75C /* Sumeru.entitlements */,
+				E4F4F14D2C31444A002AF75C /* Preview Content */,
+			);
+			path = Sumeru;
+			sourceTree = "<group>";
+		};
+		E4F4F14D2C31444A002AF75C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E4F4F14E2C31444A002AF75C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4F4F1572C31444A002AF75C /* SumeruTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4F4F1582C31444A002AF75C /* SumeruTests.swift */,
+			);
+			path = SumeruTests;
+			sourceTree = "<group>";
+		};
+		E4F4F1612C31444A002AF75C /* SumeruUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4F4F1622C31444A002AF75C /* SumeruUITests.swift */,
+				E4F4F1642C31444A002AF75C /* SumeruUITestsLaunchTests.swift */,
+			);
+			path = SumeruUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4F4F1402C314449002AF75C /* Sumeru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4F4F1682C31444A002AF75C /* Build configuration list for PBXNativeTarget "Sumeru" */;
+			buildPhases = (
+				E4F4F13D2C314449002AF75C /* Sources */,
+				E4F4F13E2C314449002AF75C /* Frameworks */,
+				E4F4F13F2C314449002AF75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sumeru;
+			productName = Sumeru;
+			productReference = E4F4F1412C314449002AF75C /* Sumeru.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4F4F1532C31444A002AF75C /* SumeruTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4F4F16B2C31444A002AF75C /* Build configuration list for PBXNativeTarget "SumeruTests" */;
+			buildPhases = (
+				E4F4F1502C31444A002AF75C /* Sources */,
+				E4F4F1512C31444A002AF75C /* Frameworks */,
+				E4F4F1522C31444A002AF75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4F4F1562C31444A002AF75C /* PBXTargetDependency */,
+			);
+			name = SumeruTests;
+			productName = SumeruTests;
+			productReference = E4F4F1542C31444A002AF75C /* SumeruTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4F4F15D2C31444A002AF75C /* SumeruUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4F4F16E2C31444A002AF75C /* Build configuration list for PBXNativeTarget "SumeruUITests" */;
+			buildPhases = (
+				E4F4F15A2C31444A002AF75C /* Sources */,
+				E4F4F15B2C31444A002AF75C /* Frameworks */,
+				E4F4F15C2C31444A002AF75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4F4F1602C31444A002AF75C /* PBXTargetDependency */,
+			);
+			name = SumeruUITests;
+			productName = SumeruUITests;
+			productReference = E4F4F15E2C31444A002AF75C /* SumeruUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4F4F1392C314449002AF75C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E4F4F1402C314449002AF75C = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E4F4F1532C31444A002AF75C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E4F4F1402C314449002AF75C;
+					};
+					E4F4F15D2C31444A002AF75C = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E4F4F1402C314449002AF75C;
+					};
+				};
+			};
+			buildConfigurationList = E4F4F13C2C314449002AF75C /* Build configuration list for PBXProject "Sumeru" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4F4F1382C314449002AF75C;
+			productRefGroup = E4F4F1422C314449002AF75C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4F4F1402C314449002AF75C /* Sumeru */,
+				E4F4F1532C31444A002AF75C /* SumeruTests */,
+				E4F4F15D2C31444A002AF75C /* SumeruUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4F4F13F2C314449002AF75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F4F14F2C31444A002AF75C /* Preview Assets.xcassets in Resources */,
+				E4F4F14B2C31444A002AF75C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F4F1522C31444A002AF75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F4F15C2C31444A002AF75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4F4F13D2C314449002AF75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F4F1472C314449002AF75C /* ContentView.swift in Sources */,
+				E4F4F1492C314449002AF75C /* Item.swift in Sources */,
+				E4F4F1452C314449002AF75C /* SumeruApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F4F1502C31444A002AF75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F4F1592C31444A002AF75C /* SumeruTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4F4F15A2C31444A002AF75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F4F1632C31444A002AF75C /* SumeruUITests.swift in Sources */,
+				E4F4F1652C31444A002AF75C /* SumeruUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4F4F1562C31444A002AF75C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4F4F1402C314449002AF75C /* Sumeru */;
+			targetProxy = E4F4F1552C31444A002AF75C /* PBXContainerItemProxy */;
+		};
+		E4F4F1602C31444A002AF75C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4F4F1402C314449002AF75C /* Sumeru */;
+			targetProxy = E4F4F15F2C31444A002AF75C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4F4F1662C31444A002AF75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4F4F1672C31444A002AF75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E4F4F1692C31444A002AF75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sumeru/Sumeru.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sumeru/Preview Content\"";
+				DEVELOPMENT_TEAM = 2WRET6WW2J;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huanyuluo.Sumeru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4F4F16A2C31444A002AF75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sumeru/Sumeru.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sumeru/Preview Content\"";
+				DEVELOPMENT_TEAM = 2WRET6WW2J;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huanyuluo.Sumeru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E4F4F16C2C31444A002AF75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WRET6WW2J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huanyuluo.SumeruTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sumeru.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sumeru";
+			};
+			name = Debug;
+		};
+		E4F4F16D2C31444A002AF75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WRET6WW2J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huanyuluo.SumeruTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sumeru.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sumeru";
+			};
+			name = Release;
+		};
+		E4F4F16F2C31444A002AF75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WRET6WW2J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huanyuluo.SumeruUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sumeru;
+			};
+			name = Debug;
+		};
+		E4F4F1702C31444A002AF75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WRET6WW2J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huanyuluo.SumeruUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sumeru;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4F4F13C2C314449002AF75C /* Build configuration list for PBXProject "Sumeru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F4F1662C31444A002AF75C /* Debug */,
+				E4F4F1672C31444A002AF75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4F4F1682C31444A002AF75C /* Build configuration list for PBXNativeTarget "Sumeru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F4F1692C31444A002AF75C /* Debug */,
+				E4F4F16A2C31444A002AF75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4F4F16B2C31444A002AF75C /* Build configuration list for PBXNativeTarget "SumeruTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F4F16C2C31444A002AF75C /* Debug */,
+				E4F4F16D2C31444A002AF75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4F4F16E2C31444A002AF75C /* Build configuration list for PBXNativeTarget "SumeruUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F4F16F2C31444A002AF75C /* Debug */,
+				E4F4F1702C31444A002AF75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4F4F1392C314449002AF75C /* Project object */;
+}
