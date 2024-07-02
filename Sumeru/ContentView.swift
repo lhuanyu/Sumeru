@@ -10,16 +10,18 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @Query(sort: \Care.timestamp, order: .reverse, animation: .bouncy) private var items: [Care]
+            
+    @State private var isPresentingAddItem = false
 
     var body: some View {
         NavigationSplitView {
             List {
                 ForEach(items) { item in
                     NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                        EditCareRecordView(care: item, editType: .edit)
                     } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                        CareRecordView(care: item)
                     }
                 }
                 .onDelete(perform: deleteItems)
@@ -39,6 +41,12 @@ struct ContentView: View {
                     }
                 }
             }
+            .navigationTitle("Care Records")
+            .sheet(isPresented: $isPresentingAddItem) {
+                NavigationView {
+                    EditCareRecordView()
+                }
+            }
         } detail: {
             Text("Select an item")
         }
@@ -46,8 +54,7 @@ struct ContentView: View {
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+            isPresentingAddItem = true
         }
     }
 
@@ -62,5 +69,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: Care.self, inMemory: true)
 }

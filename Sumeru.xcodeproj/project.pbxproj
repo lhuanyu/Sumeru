@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4528DDF2C319CB8009E05FA /* EditCareRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4528DDE2C319CB8009E05FA /* EditCareRecordView.swift */; };
+		E48874E92C31B5D800C031E5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E48874E82C31B5D800C031E5 /* Localizable.xcstrings */; };
 		E4F4F1452C314449002AF75C /* SumeruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1442C314449002AF75C /* SumeruApp.swift */; };
 		E4F4F1472C314449002AF75C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1462C314449002AF75C /* ContentView.swift */; };
-		E4F4F1492C314449002AF75C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1482C314449002AF75C /* Item.swift */; };
+		E4F4F1492C314449002AF75C /* Care.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1482C314449002AF75C /* Care.swift */; };
 		E4F4F14B2C31444A002AF75C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4F4F14A2C31444A002AF75C /* Assets.xcassets */; };
 		E4F4F14F2C31444A002AF75C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4F4F14E2C31444A002AF75C /* Preview Assets.xcassets */; };
 		E4F4F1592C31444A002AF75C /* SumeruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1582C31444A002AF75C /* SumeruTests.swift */; };
 		E4F4F1632C31444A002AF75C /* SumeruUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1622C31444A002AF75C /* SumeruUITests.swift */; };
 		E4F4F1652C31444A002AF75C /* SumeruUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1642C31444A002AF75C /* SumeruUITestsLaunchTests.swift */; };
+		E4F4F1722C31484A002AF75C /* Diaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1712C31484A002AF75C /* Diaper.swift */; };
+		E4F4F1742C314E1B002AF75C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1732C314E1B002AF75C /* Feed.swift */; };
+		E4F4F1762C315133002AF75C /* Medical.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1752C315133002AF75C /* Medical.swift */; };
+		E4F4F17A2C315329002AF75C /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = E4F4F1792C315329002AF75C /* SFSafeSymbols */; };
+		E4F4F17C2C315876002AF75C /* CareRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F17B2C315876002AF75C /* CareRecordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E4528DDE2C319CB8009E05FA /* EditCareRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCareRecordView.swift; sourceTree = "<group>"; };
+		E48874E82C31B5D800C031E5 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		E48874EA2C3265B400C031E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E4F4F1412C314449002AF75C /* Sumeru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sumeru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F4F1442C314449002AF75C /* SumeruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumeruApp.swift; sourceTree = "<group>"; };
 		E4F4F1462C314449002AF75C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E4F4F1482C314449002AF75C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		E4F4F1482C314449002AF75C /* Care.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Care.swift; sourceTree = "<group>"; };
 		E4F4F14A2C31444A002AF75C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4F4F14C2C31444A002AF75C /* Sumeru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sumeru.entitlements; sourceTree = "<group>"; };
 		E4F4F14E2C31444A002AF75C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,6 +57,10 @@
 		E4F4F15E2C31444A002AF75C /* SumeruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SumeruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F4F1622C31444A002AF75C /* SumeruUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumeruUITests.swift; sourceTree = "<group>"; };
 		E4F4F1642C31444A002AF75C /* SumeruUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumeruUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4F4F1712C31484A002AF75C /* Diaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diaper.swift; sourceTree = "<group>"; };
+		E4F4F1732C314E1B002AF75C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		E4F4F1752C315133002AF75C /* Medical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medical.swift; sourceTree = "<group>"; };
+		E4F4F17B2C315876002AF75C /* CareRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareRecordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F4F17A2C315329002AF75C /* SFSafeSymbols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,7 @@
 				E4F4F1572C31444A002AF75C /* SumeruTests */,
 				E4F4F1612C31444A002AF75C /* SumeruUITests */,
 				E4F4F1422C314449002AF75C /* Products */,
+				E4F4F1782C315329002AF75C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +113,16 @@
 		E4F4F1432C314449002AF75C /* Sumeru */ = {
 			isa = PBXGroup;
 			children = (
+				E48874EA2C3265B400C031E5 /* Info.plist */,
 				E4F4F1442C314449002AF75C /* SumeruApp.swift */,
 				E4F4F1462C314449002AF75C /* ContentView.swift */,
-				E4F4F1482C314449002AF75C /* Item.swift */,
+				E4F4F17B2C315876002AF75C /* CareRecordView.swift */,
+				E4528DDE2C319CB8009E05FA /* EditCareRecordView.swift */,
+				E4F4F1482C314449002AF75C /* Care.swift */,
+				E4F4F1732C314E1B002AF75C /* Feed.swift */,
+				E4F4F1712C31484A002AF75C /* Diaper.swift */,
+				E4F4F1752C315133002AF75C /* Medical.swift */,
+				E48874E82C31B5D800C031E5 /* Localizable.xcstrings */,
 				E4F4F14A2C31444A002AF75C /* Assets.xcassets */,
 				E4F4F14C2C31444A002AF75C /* Sumeru.entitlements */,
 				E4F4F14D2C31444A002AF75C /* Preview Content */,
@@ -132,6 +155,13 @@
 			path = SumeruUITests;
 			sourceTree = "<group>";
 		};
+		E4F4F1782C315329002AF75C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +178,9 @@
 			dependencies = (
 			);
 			name = Sumeru;
+			packageProductDependencies = (
+				E4F4F1792C315329002AF75C /* SFSafeSymbols */,
+			);
 			productName = Sumeru;
 			productReference = E4F4F1412C314449002AF75C /* Sumeru.app */;
 			productType = "com.apple.product-type.application";
@@ -218,8 +251,12 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = E4F4F1382C314449002AF75C;
+			packageReferences = (
+				E4F4F1772C315219002AF75C /* XCRemoteSwiftPackageReference "SFSafeSymbols" */,
+			);
 			productRefGroup = E4F4F1422C314449002AF75C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,6 +275,7 @@
 			files = (
 				E4F4F14F2C31444A002AF75C /* Preview Assets.xcassets in Resources */,
 				E4F4F14B2C31444A002AF75C /* Assets.xcassets in Resources */,
+				E48874E92C31B5D800C031E5 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F4F1722C31484A002AF75C /* Diaper.swift in Sources */,
+				E4528DDF2C319CB8009E05FA /* EditCareRecordView.swift in Sources */,
+				E4F4F1762C315133002AF75C /* Medical.swift in Sources */,
+				E4F4F1742C314E1B002AF75C /* Feed.swift in Sources */,
 				E4F4F1472C314449002AF75C /* ContentView.swift in Sources */,
-				E4F4F1492C314449002AF75C /* Item.swift in Sources */,
+				E4F4F17C2C315876002AF75C /* CareRecordView.swift in Sources */,
+				E4F4F1492C314449002AF75C /* Care.swift in Sources */,
 				E4F4F1452C314449002AF75C /* SumeruApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sumeru/Sumeru.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sumeru/Preview Content\"";
@@ -428,6 +472,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sumeru/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -443,8 +488,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.huanyuluo.Sumeru;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luohuanyu.Sumeru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -459,6 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Sumeru/Sumeru.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sumeru/Preview Content\"";
@@ -466,6 +513,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sumeru/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -481,8 +529,9 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.huanyuluo.Sumeru;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luohuanyu.Sumeru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -621,6 +670,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4F4F1772C315219002AF75C /* XCRemoteSwiftPackageReference "SFSafeSymbols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SFSafeSymbols/SFSafeSymbols";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4F4F1792C315329002AF75C /* SFSafeSymbols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4F4F1772C315219002AF75C /* XCRemoteSwiftPackageReference "SFSafeSymbols" */;
+			productName = SFSafeSymbols;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E4F4F1392C314449002AF75C /* Project object */;
 }
