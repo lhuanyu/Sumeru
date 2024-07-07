@@ -131,6 +131,16 @@
         }
       }
     },
+    "chart" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "图表"
+          }
+        }
+      }
+    },
     "Diaper" : {
       "localizations" : {
         "zh-Hans" : {
@@ -261,6 +271,26 @@
         }
       }
     },
+    "No records" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无记录"
+          }
+        }
+      }
+    },
+    "No records today" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天无记录"
+          }
+        }
+      }
+    },
     "note" : {
       "localizations" : {
         "zh-Hans" : {
@@ -341,6 +371,16 @@
         }
       }
     },
+    "Today" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今天"
+          }
+        }
+      }
+    },
     "Type" : {
       "localizations" : {
         "zh-Hans" : {
@@ -377,6 +417,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "写点什么吧"
+          }
+        }
+      }
+    },
+    "Yesterday" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "昨天"
           }
         }
       }

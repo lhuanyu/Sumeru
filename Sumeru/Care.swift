@@ -36,13 +36,13 @@ enum CareType: String, CaseIterable, Codable, CustomStringConvertible, Identifia
     var sfSymbol: String {
         switch self {
         case .feeding:
-            return "drop"
+            return "drop.fill"
         case .diaper:
-            return "square.and.pencil"
+            return "toilet.fill"
         case .sleep:
             return "zzz"
         case .bath:
-            return "drop.triangle"
+            return "bathtub.fill"
         case .other:
             return "square.and.pencil"
         }
@@ -159,4 +159,22 @@ final class Care: CustomStringConvertible {
             return note ?? NSLocalizedString("Unknown", comment: "")
         }
     }
+    
+    static var mockData: [Care] = {
+        var result = [Care]()
+        for day in 0..<10 {
+            let date = Date().addingTimeInterval(TimeInterval(-day * 3600 * 24))
+            let startOfDay = Calendar.current.startOfDay(for: date)
+            for _ in 0..<15 {
+                ///random time in the day
+                let date = startOfDay.addingTimeInterval(TimeInterval(Int.random(in: 0...86400)))
+                let type = CareType.allCases.randomElement()!
+                let feed = Feed(type: FeedType.allCases.randomElement()!, method: FeedMethod.allCases.randomElement()!, breastAmount: Int.random(in: 120...200), formulaAmount: Int.random(in: 120...200))
+                let diaper = Diaper(type: DiaperType.allCases.randomElement()!, amount: DiaperAmount.allCases.randomElement()!)
+                let care = Care(timestamp: date, type: type, feed: type == .feeding ? feed : nil, diaper: type == .diaper ? diaper : nil)
+                result.append(care)
+            }
+        }
+        return result
+    }()
 }

@@ -22,6 +22,7 @@
 		E4F4F1762C315133002AF75C /* Medical.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1752C315133002AF75C /* Medical.swift */; };
 		E4F4F17A2C315329002AF75C /* SFSafeSymbols in Frameworks */ = {isa = PBXBuildFile; productRef = E4F4F1792C315329002AF75C /* SFSafeSymbols */; };
 		E4F4F17C2C315876002AF75C /* CareRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F17B2C315876002AF75C /* CareRecordView.swift */; };
+		E4FA959D2C3A929700D843E7 /* EmptyRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FA959C2C3A929700D843E7 /* EmptyRecordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		E4F4F1732C314E1B002AF75C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		E4F4F1752C315133002AF75C /* Medical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medical.swift; sourceTree = "<group>"; };
 		E4F4F17B2C315876002AF75C /* CareRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareRecordView.swift; sourceTree = "<group>"; };
+		E4FA959C2C3A929700D843E7 /* EmptyRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyRecordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				E48874EA2C3265B400C031E5 /* Info.plist */,
 				E4F4F1442C314449002AF75C /* SumeruApp.swift */,
 				E4F4F1462C314449002AF75C /* ContentView.swift */,
+				E4FA959C2C3A929700D843E7 /* EmptyRecordView.swift */,
 				E4F4F17B2C315876002AF75C /* CareRecordView.swift */,
 				E4528DDE2C319CB8009E05FA /* EditCareRecordView.swift */,
 				E4F4F1482C314449002AF75C /* Care.swift */,
@@ -307,6 +310,7 @@
 				E4F4F1472C314449002AF75C /* ContentView.swift in Sources */,
 				E4F4F17C2C315876002AF75C /* CareRecordView.swift in Sources */,
 				E4F4F1492C314449002AF75C /* Care.swift in Sources */,
+				E4FA959D2C3A929700D843E7 /* EmptyRecordView.swift in Sources */,
 				E4F4F1452C314449002AF75C /* SumeruApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
