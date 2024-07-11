@@ -171,7 +171,7 @@ final class Care: CustomStringConvertible {
                 let type = CareType.allCases.randomElement()!
                 let feed = Feed(type: FeedType.allCases.randomElement()!, method: FeedMethod.allCases.randomElement()!, breastAmount: Int.random(in: 120...200), formulaAmount: Int.random(in: 120...200))
                 let diaper = Diaper(type: DiaperType.allCases.randomElement()!, amount: DiaperAmount.allCases.randomElement()!)
-                let care = Care(timestamp: date, type: type, feed: type == .feeding ? feed : nil, diaper: type == .diaper ? diaper : nil)
+                let care = Care(timestamp: date, type: type, feed: type == .feeding ? feed : nil, diaper: type == .diaper ? diaper : nil, duration: TimeInterval(Int.random(in: 60...1800)), note: type == .other ? "Some Note" : nil)
                 result.append(care)
             }
         }

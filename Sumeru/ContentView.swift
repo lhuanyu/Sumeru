@@ -17,6 +17,8 @@ struct ContentView: View {
     @State var groupedItems: [Date: [Care]] = [:]
                 
     @State private var addingItemType: CareType?
+    
+    @State private var filterCareType: CareType?
 
     var body: some View {
         NavigationSplitView {
@@ -26,7 +28,10 @@ struct ContentView: View {
                 } else {
                     List {
                         Section(header: header(for: Calendar.current.startOfDay(for: Date()))) {
-                            if let today = groupedItems[Calendar.current.startOfDay(for: Date())] {
+                            let today = careRecord(for: Calendar.current.startOfDay(for: Date()))
+                            if today.isEmpty {
+                                Text("No records today")
+                            } else {
                                 ForEach(today) { item in
                                     NavigationLink {
                                         EditCareRecordView(care: item, editType: .edit)
@@ -35,13 +40,11 @@ struct ContentView: View {
                                     }
                                 }
                                 .onDelete(perform: deleteItems)
-                            } else {
-                                Text("No records today")
                             }
                         }
                         ForEach(dates.filter { $0 != Calendar.current.startOfDay(for: Date()) }, id: \.self) { date in
                             Section(header: header(for: date)) {
-                                ForEach(groupedItems[date]!) { item in
+                                ForEach(careRecord(for: date)) { item in
                                     NavigationLink {
                                         EditCareRecordView(care: item, editType: .edit)
                                     } label: {
@@ -77,12 +80,13 @@ struct ContentView: View {
                                 Label("Sleep", systemImage: CareType.sleep.sfSymbol)
                             }
                         }
+                        .foregroundColor(.accentColor)
                     }
                     .padding()
                     .background(.ultraThinMaterial)
                     .cornerRadius(10)
                 }
-                .buttonStyle(.bordered)
+                .buttonStyle(.plain)
                 .padding()
             }
 #if os(macOS)
@@ -91,7 +95,23 @@ struct ContentView: View {
             .toolbar {
 #if os(iOS)
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+                    Menu {
+                        Picker("Filter", selection: $filterCareType) {
+                            HStack {
+                                Image(systemName: "line.horizontal.3.decrease.circle")
+                                Text("All")
+                            }.tag(nil as CareType?)
+                            ForEach(CareType.allCases, id: \.self) { type in
+                                HStack {
+                                    Image(systemName: type.sfSymbol)
+                                    Text(type.description)
+                                }.tag(type as CareType?)
+                            }
+                        }
+                        .labelsHidden()
+                    } label: {
+                        Label("Filter", systemImage: filterCareType?.sfSymbol ?? "line.horizontal.3.decrease.circle")
+                    }
                 }
 #endif
                 ToolbarItem {
@@ -105,7 +125,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("Care Records")
+            .navigationTitle(filterCareType?.description ?? NSLocalizedString("Care Records", comment: ""))
             .sheet(item: $addingItemType) { type in
                 NavigationView {
                     EditCareRecordView(type: type)
@@ -115,14 +135,14 @@ struct ContentView: View {
             Text("Select an item")
         }
         .onAppear() {
-//#if DEBUG
-//            if items.isEmpty {
-//                let mockData = Care.mockData
-//                for care in mockData {
-//                    modelContext.insert(care)
-//                }
-//            }
-//#endif
+#if DEBUG
+            if items.isEmpty {
+                let mockData = Care.mockData
+                for care in mockData {
+                    modelContext.insert(care)
+                }
+            }
+#endif
         }
         .onChange(of: items) { oldValue, newValue in
             ///put items into groups with dates
@@ -135,7 +155,7 @@ struct ContentView: View {
     
     @ViewBuilder
     func header(for date: Date) -> some View {
-        let cares = groupedItems[date] ?? []
+        let cares = careRecord(for: date)
         HStack {
             if Calendar.current.isDateInToday(date) {
                 Text("Today")
@@ -145,11 +165,27 @@ struct ContentView: View {
                 Text(date, style: .date)
             }
             Spacer()
-            Image(systemName: CareType.feeding.sfSymbol)
-            Text(cares.reduce(0) { $0 + ($1.feed?.amount ?? 0) }.description + " ml")
-            Image(systemName: CareType.diaper.sfSymbol)
-            Text(cares.filter { $0.type == .diaper }.count.description)
+            if filterCareType == .feeding || filterCareType == nil {
+                Image(systemName: CareType.feeding.sfSymbol)
+                Text(cares.reduce(0) { $0 + ($1.feed?.amount ?? 0) }.description + " ml")
+            }
+            if filterCareType == .diaper || filterCareType == nil {
+                Image(systemName: CareType.diaper.sfSymbol)
+                Text(cares.filter { $0.type == .diaper }.count.description)
+            }
+            if filterCareType == .sleep || filterCareType == nil {
+                Image(systemName: CareType.sleep.sfSymbol)
+                let seconds = cares.reduce(0) { $0 + $1.duration }
+                ///持续时间seconds为秒，转换为标准格式，最多显示小时
+                Text(Duration(secondsComponent: Int64(seconds), attosecondsComponent: 0).formatted())
+            }
         }
+    }
+    
+    func careRecord(for date: Date) -> [Care] {
+        return groupedItems[date]?.filter({ 
+            filterCareType == nil || $0.type == filterCareType
+        }) ?? []
     }
 
     private func addItem() {
