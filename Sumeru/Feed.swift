@@ -22,23 +22,23 @@ class Feed: CustomStringConvertible {
     var formulaAmount: Int = Int.zero
     ///总量
     var amount: Int {
-        switch type {
+        switch method {
         case .breast:
             return breastAmount
-        case .formula:
-            return formulaAmount
-        case .breastAndFormula:
+        case .bottle:
             return breastAmount + formulaAmount
-        case .solid:
-            return 0
         }
     }
+    
+    @Transient var totalAmountInADay: Int = 0
+
+    
     ///备注
     var note: String?
     
     init(type: FeedType, method: FeedMethod, breastAmount: Int, formulaAmount: Int, note: String? = nil, care: Care? = nil) {
-        self.type = type
         self.method = method
+        self.type = type
         self.breastAmount = breastAmount
         self.formulaAmount = formulaAmount
         self.note = note
@@ -47,15 +47,15 @@ class Feed: CustomStringConvertible {
     
     ///localized description
     var description: String {
-        switch type {
+        switch method {
+        case .bottle:
+            if breastAmount > 0 {
+                return NSLocalizedString("Breast and Formula", comment: "") + " \(amount)ml (" + NSLocalizedString("Breast", comment: "") + " \(breastAmount)ml " + NSLocalizedString("Formula", comment: "") + " \(formulaAmount)ml)"
+            } else {
+                return NSLocalizedString("Formula", comment: "") + " \(formulaAmount)ml"
+            }
         case .breast:
             return NSLocalizedString("Breast", comment: "") + " \(breastAmount)ml"
-        case .formula:
-            return NSLocalizedString("Formula", comment: "") + " \(formulaAmount)ml"
-        case .breastAndFormula:
-            return NSLocalizedString("Breast and Formula", comment: "") + " \(amount)ml (" + NSLocalizedString("Breast", comment: "") + " \(breastAmount)ml " + NSLocalizedString("Formula", comment: "") + " \(formulaAmount)ml)"
-        case .solid:
-            return NSLocalizedString("Solid", comment: "") + " \(amount)g"
         }
     }
 }

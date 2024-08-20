@@ -118,6 +118,9 @@ final class Care: CustomStringConvertible {
     var duration: TimeInterval = 0
     var note: String?
     
+    @Transient var isLastRecordInADay = false
+
+    
     init(timestamp: Date, type: CareType, feed: Feed? = nil, diaper: Diaper? = nil, duration: TimeInterval = 0, note: String? = nil) {
         self.timestamp = timestamp
         self.type = type

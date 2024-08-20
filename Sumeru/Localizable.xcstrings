@@ -11,6 +11,39 @@
         }
       }
     },
+    "%@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      }
+    },
+    "%lld" : {
+
+    },
+    "10 Days" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "近10天"
+          }
+        }
+      }
+    },
+    "24 Hours" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "近24小时"
+          }
+        }
+      }
+    },
     "Add Item" : {
       "localizations" : {
         "zh-Hans" : {
@@ -27,6 +60,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "全部"
+          }
+        }
+      }
+    },
+    "Average" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "平均值"
+          }
+        }
+      }
+    },
+    "Average: %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "平均值：%@"
           }
         }
       }
@@ -141,7 +194,17 @@
         }
       }
     },
-    "chart" : {
+    "Chart" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "图表"
+          }
+        }
+      }
+    },
+    "Charts" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -236,7 +299,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : ""
+            "value" : "过滤"
           }
         }
       }
@@ -321,6 +384,16 @@
         }
       }
     },
+    "Options" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选项"
+          }
+        }
+      }
+    },
     "Other" : {
       "localizations" : {
         "zh-Hans" : {
@@ -347,6 +420,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "选择一个项目"
+          }
+        }
+      }
+    },
+    "Show Daily Average" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示每日平均"
           }
         }
       }

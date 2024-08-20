@@ -19,6 +19,10 @@ struct ContentView: View {
     @State private var addingItemType: CareType?
     
     @State private var filterCareType: CareType?
+    
+    
+    @State private var showChartView = false
+    
 
     var body: some View {
         NavigationSplitView {
@@ -120,8 +124,10 @@ struct ContentView: View {
                     }
                 }
                 ToolbarItem(placement: .topBarLeading) {
-                    Button(action: addItem) {
-                        Label("chart", systemImage: "chart.bar")
+                    Button {
+                        showChartView.toggle()
+                    } label: {
+                        Label("Chart", systemImage: "chart.bar")
                     }
                 }
             }
@@ -135,14 +141,18 @@ struct ContentView: View {
             Text("Select an item")
         }
         .onAppear() {
-#if DEBUG
-            if items.isEmpty {
-                let mockData = Care.mockData
-                for care in mockData {
-                    modelContext.insert(care)
-                }
+//#if DEBUG
+//            if items.isEmpty {
+//                let mockData = Care.mockData
+//                for care in mockData {
+//                    modelContext.insert(care)
+//                }
+//            }
+//#endif
+            groupedItems = Dictionary(grouping: items) { item in
+                Calendar.current.startOfDay(for: item.timestamp)
             }
-#endif
+            dates = groupedItems.keys.sorted(by: >)
         }
         .onChange(of: items) { oldValue, newValue in
             ///put items into groups with dates
@@ -150,6 +160,13 @@ struct ContentView: View {
                 Calendar.current.startOfDay(for: item.timestamp)
             }
             dates = groupedItems.keys.sorted(by: >)
+        }
+        .sheet(isPresented: $showChartView) {
+            NavigationView {
+                ChartView(items: items)
+                    .navigationBarTitleDisplayMode(.inline)
+                    .navigationTitle("Charts")
+            }
         }
     }
     
@@ -183,7 +200,7 @@ struct ContentView: View {
     }
     
     func careRecord(for date: Date) -> [Care] {
-        return groupedItems[date]?.filter({ 
+        return groupedItems[date]?.filter({
             filterCareType == nil || $0.type == filterCareType
         }) ?? []
     }

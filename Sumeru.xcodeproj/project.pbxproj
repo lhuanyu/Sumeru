@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E4528DDF2C319CB8009E05FA /* EditCareRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4528DDE2C319CB8009E05FA /* EditCareRecordView.swift */; };
+		E45E4C952C7066390062D57F /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45E4C942C7066390062D57F /* ChartView.swift */; };
+		E46E76032C74623F0055F05A /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46E76022C74623F0055F05A /* ChartData.swift */; };
 		E48874E92C31B5D800C031E5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E48874E82C31B5D800C031E5 /* Localizable.xcstrings */; };
 		E4F4F1452C314449002AF75C /* SumeruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1442C314449002AF75C /* SumeruApp.swift */; };
 		E4F4F1472C314449002AF75C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F4F1462C314449002AF75C /* ContentView.swift */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		E4528DDE2C319CB8009E05FA /* EditCareRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCareRecordView.swift; sourceTree = "<group>"; };
+		E45E4C942C7066390062D57F /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		E46E76022C74623F0055F05A /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		E48874E82C31B5D800C031E5 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		E48874EA2C3265B400C031E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E4F4F1412C314449002AF75C /* Sumeru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sumeru.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E46E76042C7462440055F05A /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				E45E4C942C7066390062D57F /* ChartView.swift */,
+				E46E76022C74623F0055F05A /* ChartData.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
 		E4F4F1382C314449002AF75C = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +131,7 @@
 				E48874EA2C3265B400C031E5 /* Info.plist */,
 				E4F4F1442C314449002AF75C /* SumeruApp.swift */,
 				E4F4F1462C314449002AF75C /* ContentView.swift */,
+				E46E76042C7462440055F05A /* Charts */,
 				E4FA959C2C3A929700D843E7 /* EmptyRecordView.swift */,
 				E4F4F17B2C315876002AF75C /* CareRecordView.swift */,
 				E4528DDE2C319CB8009E05FA /* EditCareRecordView.swift */,
@@ -306,11 +320,13 @@
 				E4F4F1722C31484A002AF75C /* Diaper.swift in Sources */,
 				E4528DDF2C319CB8009E05FA /* EditCareRecordView.swift in Sources */,
 				E4F4F1762C315133002AF75C /* Medical.swift in Sources */,
+				E45E4C952C7066390062D57F /* ChartView.swift in Sources */,
 				E4F4F1742C314E1B002AF75C /* Feed.swift in Sources */,
 				E4F4F1472C314449002AF75C /* ContentView.swift in Sources */,
 				E4F4F17C2C315876002AF75C /* CareRecordView.swift in Sources */,
 				E4F4F1492C314449002AF75C /* Care.swift in Sources */,
 				E4FA959D2C3A929700D843E7 /* EmptyRecordView.swift in Sources */,
+				E46E76032C74623F0055F05A /* ChartData.swift in Sources */,
 				E4F4F1452C314449002AF75C /* SumeruApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
