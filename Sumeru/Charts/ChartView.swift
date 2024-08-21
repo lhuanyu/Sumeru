@@ -200,10 +200,12 @@ struct ChartView: View {
         diaperItems = items.filter { $0.type == .diaper }
         var group: [Care] = []
         for item in feedingItems {
-            if let lastItem = group.last {
-                if !Calendar.current.isDate(lastItem.timestamp, inSameDayAs: item.timestamp) {
-                    feedingGroups[lastItem] = group
-                    group = []
+            if let _ = item.feed  {
+                if let lastItem = group.last {
+                    if !Calendar.current.isDate(lastItem.timestamp, inSameDayAs: item.timestamp) {
+                        feedingGroups[lastItem] = group
+                        group = []
+                    }
                 }
             }
             group.append(item)
