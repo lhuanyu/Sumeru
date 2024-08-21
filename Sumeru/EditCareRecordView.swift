@@ -57,30 +57,50 @@ struct EditCareRecordView: View {
                         HStack {
                             Text("Breast Amount")
                             Spacer()
-                            TextField("Estimated Amount", value: $feed.breastAmount, formatter: numberFormatter)
-                                .multilineTextAlignment(.trailing)
-                            Text("ml")
-                                .foregroundColor(.secondary)
+                            Stepper(
+                                value: $feed.breastAmount,
+                                in: 0...500,
+                                step: 10
+                            ) {
+                                HStack {
+                                    TextField("Estimated Amount", value: $feed.breastAmount, format: .number)
+                                        .multilineTextAlignment(.trailing)
+                                    Text("ml")
+                                        .foregroundColor(.secondary)
+                                }
+                            }
                         }
                     }
                 } else {
                     Section(header: Text("Bottle Feed")) {
-                        HStack {
-                            Text("Formula Amount")
-                            Spacer()
-                            TextField("Formula Amount", value: $feed.formulaAmount, formatter: numberFormatter)
-                                .multilineTextAlignment(.trailing)
-                            Text("ml")
-                                .foregroundColor(.secondary)
+                        Stepper(
+                            value: $feed.formulaAmount,
+                            in: 0...500,
+                            step: 10
+                        ) {
+                            HStack {
+                                Text("Formula Amount")
+                                Spacer()
+                                TextField("Formula Amount", value: $feed.formulaAmount, format: .number)
+                                    .multilineTextAlignment(.trailing)
+                                Text("ml")
+                                    .foregroundColor(.secondary)
+                            }
                         }
-
-                        HStack {
-                            Text("Breast Amount")
-                            Spacer()
-                            TextField("Breast Amount", value: $feed.breastAmount, formatter: numberFormatter)
-                                .multilineTextAlignment(.trailing)
-                            Text("ml")
-                                .foregroundColor(.secondary)
+                        
+                        Stepper(
+                            value: $feed.breastAmount,
+                            in: 0...500,
+                            step: 10
+                        ) {
+                            HStack {
+                                Text("Breast Amount")
+                                Spacer()
+                                TextField("Breast Amount", value: $feed.breastAmount, formatter: numberFormatter)
+                                    .multilineTextAlignment(.trailing)
+                                Text("ml")
+                                    .foregroundColor(.secondary)
+                            }
                         }
 
                     }
