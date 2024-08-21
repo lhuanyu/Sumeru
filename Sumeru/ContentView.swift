@@ -124,10 +124,12 @@ struct ContentView: View {
                     }
                 }
                 ToolbarItem(placement: .topBarLeading) {
-                    Button {
-                        showChartView.toggle()
+                    NavigationLink {
+                        ChartView(items: items)
+                            .navigationBarTitleDisplayMode(.inline)
+                            .navigationTitle("Charts")
                     } label: {
-                        Label("Chart", systemImage: "chart.bar")
+                        Label("Chart", systemImage: "chart.bar.xaxis.ascending")
                     }
                 }
             }
@@ -141,14 +143,7 @@ struct ContentView: View {
             Text("Select an item")
         }
         .onAppear() {
-//#if DEBUG
-//            if items.isEmpty {
-//                let mockData = Care.mockData
-//                for care in mockData {
-//                    modelContext.insert(care)
-//                }
-//            }
-//#endif
+            mockData()
             groupedItems = Dictionary(grouping: items) { item in
                 Calendar.current.startOfDay(for: item.timestamp)
             }
@@ -215,6 +210,18 @@ struct ContentView: View {
         withAnimation {
             for index in offsets {
                 modelContext.delete(items[index])
+            }
+        }
+    }
+    
+    
+    func mockData() {
+        if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" {
+            if items.isEmpty {
+                let mockData = Care.mockData
+                for care in mockData {
+                    modelContext.insert(care)
+                }
             }
         }
     }
