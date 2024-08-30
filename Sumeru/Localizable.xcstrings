@@ -21,15 +21,35 @@
         }
       }
     },
-    "%lld" : {
+    "%@ – %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ – %2$@"
+          }
+        }
+      }
+    },
+    "%@ ml" : {
 
     },
-    "10 Days" : {
+    "%lld" : {
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "近10天"
+            "value" : "%lld"
+          }
+        }
+      }
+    },
+    "7 Days" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "近7天"
           }
         }
       }
